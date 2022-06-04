@@ -96,7 +96,6 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  max-width: 100%;
 }
 
 form label {
@@ -106,7 +105,13 @@ form label {
 #thinkfulbnbForm {
   display: flex;
   justify-content: space-between;
-  padding: 0 7px;
+  flex-direction: column;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
 }
 
 form select, form input {
@@ -171,23 +176,17 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
   }
 
-  #thinkfulbnbForm {
+  form div {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
-
-  #thinkfulbnbForm button {
-    transform: translateY(25%);
-    width: 11rem;
-  }
-
+  
     /*  Media query for desktop grouping  */
 
   .group {
-    display: flex;
     flex-direction: row;
     align-items: center;
   }
@@ -198,5 +197,9 @@ footer p {
 
   .ideas-bottom {
     display: flex;
+  }
+
+  form button {
+    width: 180px;
   }
 }
