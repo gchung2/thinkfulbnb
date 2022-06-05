@@ -149,24 +149,14 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 0;
   }
 
   .logo {
     font-size: 3rem;
   }
 
-  form select, form input {
-    margin-bottom: 20px;
-    width: 180px;
-  }
-
   header nav url {
-    align-items: center;
-  }
-
-  .group {
-    flex-direction: row;
     align-items: center;
   }
 
@@ -174,16 +164,21 @@ footer p {
   form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   form div {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+  }
+
+  form button {
+    flex: 1;
   }
   
+  form select, form input {
+    margin-bottom: 0px;
+  }
+
     /*  Media query for desktop grouping  */
 
   .group {
@@ -197,9 +192,5 @@ footer p {
 
   .ideas-bottom {
     display: flex;
-  }
-
-  form button {
-    width: 180px;
   }
 }
