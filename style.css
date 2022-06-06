@@ -149,7 +149,7 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    vertical-align: middle;
   }
 
   .logo {
@@ -158,6 +158,7 @@ footer p {
 
   header nav url {
     align-items: center;
+    vertical-align: middle;
   }
 
   /*  Media query for desktop search form  */
