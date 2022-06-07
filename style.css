@@ -69,12 +69,13 @@ header {
   color: #fff;
 }
 
-header nav ul {
+header nav {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding-left: 0;
-  padding-bottom: 20px;
+}
+
+header nav ul {
+  display: flex;
 }
 
 header nav ul li {
@@ -102,15 +103,8 @@ form label {
   font-weight: bold;
 }
 
-#thinkfulbnbForm {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
 form div {
   display: flex;
-  flex-direction: row;
   justify-content:space-between;
 }
 
@@ -145,29 +139,22 @@ footer p {
 
 /* added the media query for desktop*/
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 1020px) {
   header {
     display: flex;
     justify-content: space-between;
-    vertical-align: middle;
+    padding: 0;
   }
 
-  .logo {
-    font-size: 3rem;
-  }
-
-  header nav url {
+  header nav ul {
     align-items: center;
-    vertical-align: middle;
   }
 
   /*  Media query for desktop search form  */
   form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   form div {
@@ -177,20 +164,9 @@ footer p {
   form button {
     flex: 1;
   }
-  
+
   form select, form input {
-    margin-bottom: 4px;
-    min-width: 0;
-  }
-
-  .item {
-    flex: 1;
-    margin: 15px;
-  }
-
-  .item-double {
-    flex: 2;
-    margin: 15px;
+    margin-bottom: 0px;
   }
 
     /*  Media query for desktop grouping  */
@@ -200,47 +176,39 @@ footer p {
     align-items: center;
   }
 
-  .ideas-top {
-    display: flex;
+  .item {
+    flex-wrap: wrap;
   }
 
-  .ideas-bottom {
-    display: flex;
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
   }
 }
 
-@media all and (min-width: 620px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    vertical-align: middle;
+
+@media all and (min-width: 480px) {
+  .logo {
+    font-size: 52px;
+  }
+  
+  .item-double {
+    flex-wrap: wrap;
   }
 
-  form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  form input {
+    flex-grow: inherit;
+  }
+  form label {
+    width: 140px;
   }
 
-  form div {
-    flex-direction: column;
+  form select {
+    flex-grow: inherit;
   }
 
-  form button {
-    flex: 1;
+  form select, form input {
+  flex-wrap: wrap; 
   }
-
-  form div {
-    flex-direction: column;
-  }
-
-  form button {
-    flex: 1;
-  }
-
-  .group {
-    flex-direction: row;
-    align-items: center;
-  }
-
 }
